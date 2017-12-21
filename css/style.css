@@ -1,0 +1,34 @@
+.title {
+    text-align: center;
+}
+.user_pos {
+    position: absolute;
+    width:200px;
+}
+#map {
+    /*max-width: 800px;*/
+    height: 500px;
+    margin: auto;
+}
+#mapforusa{
+    display: inline-block;
+}
+#mapforchina{
+    display: inline-block;
+}
+#userlat {
+    position: absolute;
+    left: 190px;
+    width: 80px;
+}
+#userlng{
+    position: absolute;
+    left: 160px;
+    width: 80px;
+}
+.form-wrapper {
+	padding-top: 65px;
+}
+.form-wrapper button {
+	text-transform: capitalize;	
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Geometry Demo with Google Maps</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="title">Market Information Using Voronoi Diagrams</h2>
+                <div id="map"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-wrapper">
+                    <form>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-info btn-block" id="mapforusa">Show me Products in USA</button>
+                            <button type="button" class="btn btn-info btn-block" id="mapforchina">Show me Products in China</button>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="productsDropdown">
+                                <option selected disabled>Select Product</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-danger btn-block" id="productsForUsaBtn">Show me places it is sold </button>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary btn-block" id="productsNearestBtn">Show me the nearest seller</button>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-warning btn-block" id="cheapestResellerBtn">Show me the cheapest seller</button>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success btn-block" id="highestReviewBtn">Show me highest review seller</button>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="user_pos"><h4> user's position(lat, lng)</h4></div>
+                            <div class=" col-md-4 ">
+                                <input type="number"  id="userlat" class="form-control" placeholder="lat">
+                            </div>
+                            <div class=" col-md-4 ">
+                                <input type="number" id="userlng" class="form-control" placeholder="lng">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/axios.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDjz4e_FwhobrRp4OvgHD8tggqIobbiarM&sensor=false"></script>
+    <script src="js/prototype.js"></script>
+    <script src="js/scriptaculous.js"></script>
+    <script src="js/yahoo.color.js"></script>
+    <script src="js/main_functions.js"></script>
+    <script src="js/object.js"></script>
+    <script src="js/voronoi_core.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
